@@ -1,0 +1,19 @@
+{
+    "name": "osc-server",
+    "version": "1.0.0",
+    "main": "server.js",
+    "type": "commonjs",
+    "dependencies": {
+        "osc": "^2.4.2",
+        "ws": "^8.13.0"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "web": "npx serve .",
+        "dev": "concurrently \"npm run start\" \"npm run web\""
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.2",
+        "serve": "^14.2.4"
+    }
+}
